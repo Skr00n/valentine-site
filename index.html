@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Myra, will you be my Valentine? 💕</title>
+  <title>Maira, will you be my Valentine? 💕</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Fredoka:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
@@ -13,17 +13,24 @@
   <div class="floating-hearts" aria-hidden="true"></div>
 
   <main class="container">
-    <h1 class="title">Myra, will you be my Valentine?</h1>
+    <h1 class="title">Maira, will you be my Valentine?</h1>
+    <!-- EDIT THIS: Change the small message below -->
     <p class="subtitle">You light up my world every single day ✨</p>
+    <!-- END EDIT -->
 
     <div class="buttons-wrapper" id="buttonsWrapper">
-      <button type="button" class="btn btn-yes" id="btnYes">YES</button>
+      <div class="buttons-inner">
+        <button type="button" class="btn btn-yes" id="btnYes">YES</button>
+        <span class="btn-placeholder" aria-hidden="true"></span>
+      </div>
       <button type="button" class="btn btn-no" id="btnNo">NO</button>
     </div>
 
     <div class="success-message hidden" id="successMessage">
-      <p class="success-text">Yay!!! ❤️ Myra, I knew you would say yes!</p>
+      <p class="success-text">Yay!!! ❤️ Maira, I knew you would say yes!</p>
+      <!-- EDIT THIS: Change the success message below -->
       <p class="success-subtext">I'm the luckiest person in the world. Can't wait to celebrate with you! 💕</p>
+      <!-- END EDIT -->
       <div class="confetti-container" id="confettiContainer"></div>
     </div>
   </main>

@@ -130,8 +130,6 @@ body {
 /* ===== Buttons wrapper ===== */
 .buttons-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
   justify-content: center;
   align-items: center;
   min-height: 5rem;
@@ -139,6 +137,23 @@ body {
   max-width: 100%;
   position: relative;
   animation: fadeIn 1s ease-out 0.3s both;
+}
+
+.buttons-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.btn-placeholder {
+  display: inline-block;
+  width: 5.5rem;
+  height: 2.8rem;
+  visibility: hidden;
+  pointer-events: none;
+  flex-shrink: 0;
 }
 
 .buttons-wrapper.hidden {
@@ -189,7 +204,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* NO button position is controlled by JS; this is fallback */
+/* NO button position is controlled by JS; starts centered next to YES */
 .buttons-wrapper .btn-no {
   position: absolute;
   transition: left 0.15s ease-out, top 0.15s ease-out, transform 0.15s ease-out;
@@ -280,5 +295,14 @@ body {
 
   .buttons-wrapper {
     min-height: 5rem;
+  }
+
+  .btn-placeholder {
+    width: 5rem;
+    height: 2.6rem;
+  }
+
+  .buttons-inner {
+    gap: 1rem;
   }
 }
